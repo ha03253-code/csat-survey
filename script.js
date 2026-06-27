@@ -6,7 +6,7 @@
 
 // 1. PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL BELOW
 //    (You get this after deploying google-apps-script.gs — see README.md)
-const SCRIPT_URL = "https://script.google.com/a/macros/usmobile.com/s/AKfycby1zyTjx_K-bZnMohl0Y6Gj0GocVCbRkQCU4i7E4t-iJzQMYD4mirQQDYnZSGQ7P2IPIw/exec";
+const SCRIPT_URL = "https://script.google.com/a/macros/usmobile.com/s/AKfycbwBasH8NjejpQKHLSzQSAZO4CP-wCGdgVKmBIzzFnArRvD_vv2rQgJoQOl1yK3DEqY8XQ/exec";
 
 // ---------------------------------------------------------
 
