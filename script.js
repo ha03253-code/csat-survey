@@ -6,7 +6,7 @@
 
 // 1. PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL BELOW
 //    (You get this after deploying google-apps-script.gs — see README.md)
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbweZx3TvpTpaqp1YxhR7eCOGaYtograPNvTj-tnddbEJwMz2d2XrcL89aglbH13ACIzhg/exec";
+const SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
 
 // ---------------------------------------------------------
 
@@ -34,6 +34,7 @@ const params = new URLSearchParams(window.location.search);
 const urlRating = params.get("rating");
 const ticketNumber = params.get("ticket") || "";
 const agentName = params.get("agent") || "";
+const customerName = params.get("customer") || "";
 let surveyId = params.get("survey_id") || params.get("sid") || "";
 
 if (!surveyId) {
@@ -52,7 +53,8 @@ function sendToSheet(rating, feedback) {
     feedback: feedback || "",
     surveyId: surveyId,
     ticketNumber: ticketNumber,
-    agentName: agentName
+    agentName: agentName,
+    customerName: customerName
   };
 
   // Using text/plain avoids a CORS "preflight" request, which
